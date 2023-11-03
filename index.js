@@ -95,38 +95,38 @@ let perbandingan = [];
 
 // Perbandingan nilai min ganjil dan genap
 if (minGenap > minGanjil) {
-  perbandingan.push("Nilai Minimum lebih besar pada array Genap");
+  perbandingan.push("Nilai Minimum lebih besar pada array index Genap");
 } else if (minGenap < minGanjil) {
-  perbandingan.push("Nilai Minimum lebih besar pada array Ganjil");
+  perbandingan.push("Nilai Minimum lebih besar pada array index Ganjil");
 } else {
-  perbandingan.push("Nilai Minimum sama pada array Genap dan Ganjil");
+  perbandingan.push("Nilai Minimum sama pada array index Genap dan Ganjil");
 }
 
 // Perbandingan nilai max ganjil dan genap
 if (maxGenap > maxGanjil) {
-  perbandingan.push("Nilai Maksimum lebih besar pada array Genap");
+  perbandingan.push("Nilai Maksimum lebih besar pada array index Genap");
 } else if (maxGenap < maxGanjil) {
-  perbandingan.push("Nilai Maksimum lebih besar pada array Ganjil");
+  perbandingan.push("Nilai Maksimum lebih besar pada array index Ganjil");
 } else {
-  perbandingan.push("Nilai Maksimum sama pada array Genap dan Ganjil");
+  perbandingan.push("Nilai Maksimum sama pada array index Genap dan Ganjil");
 }
 
 // Perbandingan nilai total ganjil dan genap
 if (totalGenap > totalGanjil) {
-  perbandingan.push("Total lebih besar pada array Genap");
+  perbandingan.push("Total lebih besar pada array index Genap");
 } else if (totalGenap < totalGanjil) {
-  perbandingan.push("Total lebih besar pada array Ganjil");
+  perbandingan.push("Total lebih besar pada array index Ganjil");
 } else {
-  perbandingan.push("Total sama pada array Genap dan Ganjil");
+  perbandingan.push("Total sama pada array index Genap dan Ganjil");
 }
 
 // Perbandingan nilai rata rata ganjil dan genap
 if (rataRataGenap > rataRataGanjil) {
-  perbandingan.push("Rata-rata lebih besar pada array Genap");
+  perbandingan.push("Rata-rata lebih besar pada array index Genap");
 } else if (rataRataGenap < rataRataGanjil) {
-  perbandingan.push("Rata-rata lebih besar pada array Ganjil");
+  perbandingan.push("Rata-rata lebih besar pada array index Ganjil");
 } else {
-  perbandingan.push("Rata-rata sama pada array Genap dan Ganjil");
+  perbandingan.push("Rata-rata sama pada array index Genap dan Ganjil");
 }
 
 console.log("Perbandingan: ", perbandingan);
