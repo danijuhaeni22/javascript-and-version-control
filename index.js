@@ -1,7 +1,17 @@
 // Buatlah 100 nilai random (1 sampai 50) pada 1 array
-let nilaiRandom = [];
-for (i = 0; i < 100; i++) {
-  nilaiRandom.push(Math.floor(Math.random() * 50) + 1);
+const nilaiRandom = [];
+let angkaGenap = 0;
+let angkaGanjil = 0;
+
+while (nilaiRandom.length < 100) {
+  const acakAngka = Math.floor(Math.random() * 50) + 1;
+  if (acakAngka % 2 === 0 && angkaGenap < 50) {
+    nilaiRandom.push(acakAngka);
+    angkaGenap++;
+  } else if (acakAngka % 2 !== 0 && angkaGanjil < 50) {
+    nilaiRandom.push(acakAngka);
+    angkaGanjil++;
+  }
 }
 
 // Pecahlah menjadi 2 array berdasarkan indexnya, yakni array pada index genap dan array pada index ganjil, gunakan method push() untuk menambahkan nilai baru pada array
@@ -9,7 +19,7 @@ let indexGenap = [];
 let indexGanjil = [];
 
 for (i = 0; i < nilaiRandom.length; i++) {
-  if (i % 2 == 0) {
+  if (nilaiRandom[i] % 2 == 0) {
     indexGenap.push(nilaiRandom[i]);
   } else {
     indexGanjil.push(nilaiRandom[i]);
